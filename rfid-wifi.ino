@@ -38,7 +38,7 @@ void loop() {
   bool found = scanRfid();
 }
 
-int scanRfid(){  
+bool scanRfid(){  
   if(!rc.PICC_IsNewCardPresent()){
     return false;
   }
